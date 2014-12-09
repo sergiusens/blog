@@ -1,0 +1,31 @@
+---
+title: "I me mine"
+baseurl: "http://blog.sergiusens.org/"
+contentdir: "content"
+layoutdir: "layouts"
+publishdir: "public"
+disqusShortname: "sergiusens"
+MetaDataFormat: "yaml"
+description: "An elegant open source and mobile first theme, extended with new integrations and layout improvements"
+
+tags:
+        - blog
+        - personal
+
+features:
+        - blog
+        - personal
+
+params:
+        github: http://github.com/sergiusens
+        linkedin: http://ar.linkedin.com/in/sergioschvezov
+        googleplus: https://plus.google.com/+SergioSchvezov
+        twitter: http://twitter.com/sergiusens
+
+        googleAnalytics: UA-37640305-1
+
+author:
+        name: Sergio Schvezov
+        email: sergiusens@gmail.com
+...
+
