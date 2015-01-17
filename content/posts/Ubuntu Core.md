@@ -21,8 +21,8 @@ just rollback, it's that neat. So in summary, `ubuntu-device-flash` today is
 just a step in the release process to get to the final image.
 
 Yesterday I played around with creating a *snap* for
-[calimstore](https://camlistore.org) and it was a *breeze*, To get it just
-`snap install calimstore`, all the command line tools are in there provided by
+[camlistore](https://camlistore.org) and it was a *breeze*, To get it just
+`snap install camlistore`, all the command line tools are in there provided by
 the `binary` stanza from
 [package.yaml](http://developer.ubuntu.com/snappy/packaging-format-for-apps/).
 The `camlistored` daemon is created in the `services` list where I just needed
@@ -35,7 +35,7 @@ What is missing here though, is an easy way to configure the package that was
 just intalled, for now, it should be as easy to look at the
 [file system layout](http://developer.ubuntu.com/snappy/filesystem-layout/) and
 going to `/var/lib/apps/<app-name>/<version>/` which would be
-`/var/lib/apps/calimstore/0.8` and within we'd have
+`/var/lib/apps/camlistore/0.8` and within we'd have
 `.config/camlistore/server-config.json`, in most cases you'd want to setup your
 authentication in there.
 
