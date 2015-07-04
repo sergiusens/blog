@@ -1,11 +1,14 @@
 {{ template "partials/head.html" . }}
 
 <div class="content container">
-  <ul class="posts">
   {{ range .Data.Pages }}
-    <li><a href="{{ .Permalink }}">{{ .Title }}</a> &middot; <time>{{ .Date.Format "Jan 2, 2006" }}</time></li>
+    <h1><a href="{{ .Permalink }}">{{ .Title }}</a> </h1>
+    <time>{{ .Date.Format "Jan 2, 2006" }}</time>  &middot; {{ .ReadingTime }} minute read{{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}</span>
+    
+    <div> 
+    {{ .Summary }}
+    </div>
   {{ end }}
-  </ul>
 </div>
 
 {{ template "partials/foot.html" . }}
