@@ -1,0 +1,18 @@
+language: go
+
+go:
+    - 1.4
+
+before_install:
+    - sudo apt-get update -qq
+    - sudo apt-get install python3-pygments
+
+install:
+    - go get github.com/spf13/hugo
+
+script:
+    - hugo
+
+env:
+  global:
+    secure: efLAF8kkN4Ngz7MmZd3J+eLYqVESZdZD+JdC5Ye9v6GUJ5wy9UfMYiZrQ3OIvDMSAJJJmliQA0LLEzVH60OGc0eKIhYpAcId2HNjRlW16Taox5mXF92pMySV9+IQvehRZh83fsZaopy1a0U7GbNblqzymy5pqXXz9HDZRF9QRso=
