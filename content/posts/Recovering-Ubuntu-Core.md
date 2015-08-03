@@ -135,6 +135,9 @@ This would create an image called `core.img`, with 2 partitions:
 - `recovery`, with all those snappy packages passed in the command line and
   a grub's `core.img`.
  
+I want to take into account again that this `uflash` thing is just for play 
+and its cli will likely be different if it comes to fruition.
+
 ## Recovering
 
 The `grub.cfg` put into `recovery` would boot into `recovery` using the 
