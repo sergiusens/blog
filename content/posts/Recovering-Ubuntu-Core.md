@@ -154,20 +154,29 @@ are ignored here as it's not part of the current experiment).
 It will also install a `core.img` which the boot loader in `recovery` would 
 jump to providing boot loader independence for the running system.
 
-## Demo 
+## Try it
 
-To make this visible, here's how the system would boot:
+- Download `core.img.xz` from 
+http://people.canonical.com/~sergiusens/snappy/recovery
+- Make sure the checksum is correct.
+- Extract into `core.img`
+- Run it `kvm -m 1500 core.img`
 
 ## Take away
 
 All this is experimental, but everything used here can be found in 
-[http://people.canonical.com/~sergiusens/snappy/recovery] and the code 
-is composed of multiple branches under my name in [https://code.launchpad.net/~sergiusens/snappy](snappy).
+[recovery](http://people.canonical.com/~sergiusens/snappy/recovery) and the 
+code is composed of multiple branches under my name which can be found in
+[snappy](https://code.launchpad.net/~sergiusens/snappy).
 
 There is no indication of this merging into the main branch or product and
 the code is not production quality (yet).
 
 A side benefit is that the `recovery` logic could potentially serve as an
 installer.
+
+There are some things you just can't do with this image, which if paying 
+attention would be easy to spot but just in case, system image updates won't
+work.
 
 That's all
