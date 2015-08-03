@@ -160,7 +160,7 @@ jump to providing boot loader independence for the running system.
 ## Try it
 
 - Download `core.img.xz` from 
-http://people.canonical.com/~sergiusens/snappy/recovery
+[recovery](http://people.canonical.com/~sergiusens/snappy/recovery)
 - Make sure the checksum is correct.
 - Extract into `core.img`
 - Run it `kvm -m 1500 core.img`
