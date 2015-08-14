@@ -9,3 +9,4 @@ deploy:
         token: $GIT_TOKEN
         domain: blog.sergiusens.org
         basedir: public
+        repo: sergiusens/ sergiusens.github.com
