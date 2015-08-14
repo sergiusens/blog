@@ -9,6 +9,8 @@ title: Recovering Ubuntu Core
 
 # Introduction
 
+> A note of caution, most of this is an experiment and lacks *finess*.
+
 Ubuntu Core was released over half a year ago using this nice thing called 
 **snappy**, the design allows for transactional updates among others, these
 updates keep on *rolling* though their streams and can be kicked out (rolled
