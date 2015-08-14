@@ -5,8 +5,9 @@ build:
         version: 0.14
 deploy:
   steps:
-    - lukevivier/gh-pages@0.2.1:
-        token: $GIT_TOKEN
-        domain: blog.sergiusens.org
-        basedir: public
-        repo: sergiusens/ sergiusens.github.com
+    - git-push:
+         gh_oauth: $GIT_TOKEN
+         gh_pages: true
+         gh_pages_domain: blog.sergiusens.org
+         basedir: public
+         repo: sergiusens/sergiusens.github.com
