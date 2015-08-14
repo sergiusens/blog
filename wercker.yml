@@ -5,9 +5,7 @@ build:
         version: 0.14
 deploy:
   steps:
-      - leipert/git-push@0.7.6:
-         gh_oauth: $GIT_TOKEN
-         gh_pages: true
-         gh_pages_domain: blog.sergiusens.org
-         basedir: public
+      - rootavish/gh-pages@0.2.1:
+         token: $GIT_TOKEN
+         domain: blog.sergiusens.org
          repo: sergiusens/sergiusens.github.com
