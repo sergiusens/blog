@@ -1,4 +1,0 @@
-[submodule "public"]
-       path = public
-       url = ssh://git@github.com/sergiusens/sergiusens.github.com.git
-
