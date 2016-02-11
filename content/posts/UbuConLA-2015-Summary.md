@@ -3,10 +3,11 @@ Categories: ["ubuntu"]
 Description: ""
 Keywords: ["ubuntu", "snappy", "conference", "ubuconla"]
 Tags: []
-draft: true
 date: 2015-08-16T13:29:02-03:00
 title: UbuConLA 2015 Summary
 ---
+
+> This is a post I never got to publish from way back.
 
 ## About UbuConLA
 
@@ -42,25 +43,30 @@ architecture was needed instead of just laying it out which seemed to
 hit the nail on the right spot. I must add that the audience was a mix of
 users and developers.
 
+{{% youtube 26810LXUDAU %}}
 
 ## Listening in
 
 I had the pleasure to listen to some great talks here and there, all were
 good to some degree but these are the ones that kept resonating after a while
 
-### Title needed, by Juanjo Ciarlante
+### Software Libre en las Nubes, by Juanjo Ciarlante
 
-Led with grace and ease, when he talked, the
-complicated felt simple and elegant. He rambled over the hot *cloud* topic,
-going over a cube and triangle
+Led with grace and ease, when he talked it seemed so straight forward.
+What was complicated felt simple and elegant. He rambled over the hot *cloud*
+topic, going over a cube and triangle...
 
-### Juju, by .....
+{{% youtube ei1i75XmrVg %}}
+
+### Juju, by Sebastián Ferrari
 
 Was great, I liked how the presenter presented this, so far my interactions
 with how juju works and is used was limiting (I had the basics, but that
 was it).
 
-### School, by
+{{% youtube diDbsRU3P2E %}}
+
+### Ubuntu in Schools, by Neyder Achahuanco
 
 This guy came from Puno, an engineer turned school teacher for the love of the
 art, he went through how he failed at teaching kids how to develop software
@@ -81,8 +87,7 @@ story on how to get teachers out of their dogma and buy into change and it is
 not that teachers don't like change more so that they can't cope with things
 just being dropped on them (like OLPCs to schools without electricity).
 
-### Honorary mentions
-
+{{% youtube JXtJKnzHWg8 %}}
 
 ## Closing remarks
 
@@ -92,8 +97,6 @@ through the [Ubuntu on Air Youtube channel](https://youtube.com/ubuntuonair).
 
 On Saturday, we had a group photo taken outside on campus just like what was
 done during the UDS's of the past.
-
-**PHOTO**
 
 While I'm not the best person socializing, I did have a good chance at it.
 My socializing was mostly with other speakers for some odd reason though.
