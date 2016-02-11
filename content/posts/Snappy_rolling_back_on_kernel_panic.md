@@ -1,8 +1,8 @@
 ---
-Categories: [“ubuntu”]
+Categories: [ubuntu]
 Description: ""
 Keywords: []
-Tags: [“ubuntu”, “snappy”]
+Tags: [snappy]
 date: 2015-05-08T12:31:49-03:00
 title: Snappy rolling back on kernel panic
 ---

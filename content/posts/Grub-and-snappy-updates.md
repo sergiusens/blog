@@ -1,8 +1,8 @@
 ---
-Categories: ["ubuntu"]
+Categories: [ubuntu]
 Description: ""
-Keywords: ["ubuntu", "snappy", "grub"]
-Tags: ["ubuntu", "snappy"]
+Keywords: [bootloaders, grub]
+Tags: [snappy]
 date: 2015-07-05T11:41:56-03:00
 title: Grub and snappy updates
 ---
@@ -11,14 +11,14 @@ This week, the snappy powered Ubuntu Core landed some interesting changes with
 regards to how it handles `grub` based systems.
 
 ## History
-The original implementation was based on traditional Ubuntu systems, where a 
+The original implementation was based on traditional Ubuntu systems, where a
 bunch of files that any debian package could setup influenced the resulting
-`grub.cfg` that resulted after running `update-grub`.  This produced a 
+`grub.cfg` that resulted after running `update-grub`.  This produced a
 `grub.cfg` that was really hard to manage or debug, and what is most important,
 out of our control. This also differed greatly from our `u-boot` story where
-any gadget could override the boot setup so it bootstraps as needed. 
+any gadget could override the boot setup so it bootstraps as needed.
 
-We don't want to own the logic for this, but only provide the guidelines for 
+We don't want to own the logic for this, but only provide the guidelines for
 the necessary *primitives* for proper rollback at that level to work.
 
 These steps also make our bootloader story look and feel more similar between
@@ -26,14 +26,14 @@ each other where soon we may be able to just not care about it as the logic
 will be driven as if it were a black box.
 
 ## Rolling it out
-Even though this worked targeted the development release, also known as the 
+Even though this worked targeted the development release, also known as the
 *rolling* one, we trie to make sure all systems would transition to this model
 transparently. Given the model though, it isn't a one step solution as we need
 to be able to update to systems which do **not** run `update-grub` and rollback
-to systems that do. We also need to update from a sytem that has this new 
+to systems that do. We also need to update from a sytem that has this new
 *snappy* logic to one that doesn't. This was solved with a very `grub.cfg`
 slick `grub.cfg` delivered through the `gadget` packages (still named `oem` in
-current implementations), in contrast, similar to the `u-boot` and `uEnv.txt` 
+current implementations), in contrast, similar to the `u-boot` and `uEnv.txt`
 mechanics.
 
 On a running system, these would be the steps taken:
@@ -45,7 +45,7 @@ On a running system, these would be the steps taken:
 - The next `os` update would be driven by the new `snappy` logic which would
   `sync` `grub.cfg` from the `oem` package into the bootloader area. This
   new snappy would **not** run `update-grub`. The system would boot from the
-  legacy kernel paths as if it were a delta update no new kernel would be 
+  legacy kernel paths as if it were a delta update no new kernel would be
   delivered.
 - Updates would rinse and repeat, when there's a new kernel provided in an
   update, the bootloader `a` and `b` locations would be used to store that
@@ -53,13 +53,13 @@ On a running system, these would be the steps taken:
   change is transparent.
 - On the next update, kernel asset file syncing would take place and populate
   the *other* label (`a` or `b`).
- 
+
 This is the development release so we shouldn't worry to much about breaking,
 but why do so if it can be avoided ;-)
 
 ## Outcome
 
-The resulting code base is much simpler, there are less headaches and we don't 
+The resulting code base is much simpler, there are less headaches and we don't
 need to maintain or understand huge grub script snippets. Just for kicks, this
 is the `grub.cfg` we use:
 
@@ -218,7 +218,7 @@ menuentry 'Ubuntu Core Snappy system-b rootfs'  $menuentry_id_option 'gnulinux-s
 	else
 	  search --no-floppy --fs-uuid --set=root 4ff468ee-953f-45df-a751-e6232a1c8ef7
 	fi
-	linux /boot/vmlinuz-3.19.0-22-generic root=LABEL=system-b ro init=/lib/systemd/systemd console=tty1 console=ttyS0 panic=-1 
+	linux /boot/vmlinuz-3.19.0-22-generic root=LABEL=system-b ro init=/lib/systemd/systemd console=tty1 console=ttyS0 panic=-1
 	initrd /boot/initrd.img-3.19.0-22-generic
 }
 menuentry 'Ubuntu Core Snappy system-a rootfs'  $menuentry_id_option 'gnulinux-simple-LABEL=system-a' {
@@ -233,7 +233,7 @@ menuentry 'Ubuntu Core Snappy system-a rootfs'  $menuentry_id_option 'gnulinux-s
 	else
 	  search --no-floppy --fs-uuid --set=root 47ea9cad-ec4f-4290-85e8-eee7dac19f1c
 	fi
-	linux /boot/vmlinuz-3.19.0-22-generic root=LABEL=system-a ro init=/lib/systemd/systemd console=tty1 console=ttyS0 panic=-1 
+	linux /boot/vmlinuz-3.19.0-22-generic root=LABEL=system-a ro init=/lib/systemd/systemd console=tty1 console=ttyS0 panic=-1
 	initrd /boot/initrd.img-3.19.0-22-generic
 }
     # set defaults

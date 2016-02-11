@@ -1,8 +1,8 @@
 ---
 Categories: ["ubuntu"]
 Description: ""
-Keywords: ["ubuntu", "snappy", "conference", "ubuconla"]
-Tags: []
+Keywords: [ubuconla]
+Tags: [snappy, conference]
 date: 2015-08-16T13:29:02-03:00
 title: UbuConLA 2015 Summary
 ---

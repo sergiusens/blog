@@ -1,8 +1,8 @@
 ---
-Categories: [“ubuntu”]
+Categories: [ubuntu]
 Description: ""
-Keywords: [“ubuntu”, “snappy”, “iot”, “things”, “ubuntu-device-flash”]
-Tags: [“ubuntu”, “snappy”, “ubuntu-device-flash”]
+Keywords: [iot, things, ubuntu-device-flash]
+Tags: [snappy]
 date: 2015-01-30T11:25:45-03:00
 title: Preliminary support for dtb override from OEM snaps
 ---
@@ -43,7 +43,7 @@ After that it’s just a `snappy build` away:
 In order to get this properly provisioned, first we need the latest
 `ubuntu-device-flash` from the `ppa:snappy-dev/tools`, so let’s get it
 
-    sudo add-apt-repository ppa:snappy-dev/tools 
+    sudo add-apt-repository ppa:snappy-dev/tools
     sudo apt update
     sudo apt install ubuntu-device-flash
 

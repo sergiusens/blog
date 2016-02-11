@@ -1,8 +1,8 @@
 ---
-Categories: [“ubuntu”]
+Categories: [ubuntu]
 Description: "Snappy for devices"
-Keywords: [“ubuntu”, “snappy”, “iot”, “things”]
-Tags: [“ubuntu”, “snappy”]
+Keywords: [iot, things]
+Tags: [snappy]
 date: 2015-01-20T12:07:57-03:00
 title: Snappy Things
 ---

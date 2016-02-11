@@ -1,11 +1,10 @@
 ---
-Categories: ["ubuntu"]
+Categories: [ubuntu]
 Description: "A snappy system"
-Keywords: ["ubuntu", "snappy"]
-Tags: ["ubuntu", "snappy"]
+Keywords: [camlistore snap]
+Tags: [snappy]
 date: 2014-12-10T18:15:38+02:00
 title: Ubuntu Core
-Draft: false
 ---
 
 Ubuntu Core is what we've been working on this past time, it has been an

@@ -1,8 +1,8 @@
 ---
-Categories: ["ubuntu"]
+Categories: [ubuntu]
 Description: ""
-Keywords: []
-Tags: ["ubuntu", "snappy"]
+Keywords: [ubuntu-device-flash]
+Tags: [snappy]
 date: 2015-04-20T16:29:39-03:00
 title: Updates to snappy and ubuntu-device-flash
 Drafs: false
@@ -30,7 +30,7 @@ are being used; the `core` images have the concept of `channel` which can be:
 - edge
 
 Today, as of this writing, we are supporting `edge` and `alpha` for each *OS release* and as soon
-as we release we will have a `stable` channel enabled. Store support for channels is coming to 
+as we release we will have a `stable` channel enabled. Store support for channels is coming to
 a future near you which means that eventually packages can track different channels.
 
 Another addition is a new `snap` type called `oem`, this snappy package allows OEMs to enable

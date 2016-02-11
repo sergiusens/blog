@@ -3,27 +3,28 @@ Categories:
   - ubuntu
 Description: 'We want to use git, but where?'
 Keywords:
-  - ubuntu
+  - vcs
+  - source control
+  - development
 Tags:
-  - ubuntu
   - snappy
 date: 2015-06-25T01:27:20.000Z
 title: The github or launchpad dilemma
 ---
 
-We wanted to start a migration path from bazaar to git given how ubiquitous it 
-is and due to the fact that most in our team prefer it. A few months ago the 
-decision was easy, since launchpad did not support git, we would just switch to 
+We wanted to start a migration path from bazaar to git given how ubiquitous it
+is and due to the fact that most in our team prefer it. A few months ago the
+decision was easy, since launchpad did not support git, we would just switch to
 github given it's popularity. _That's not true anymore..._
 
-Today launchpad supports git and our comparison becomes finer grained and we 
+Today launchpad supports git and our comparison becomes finer grained and we
 have to break it down a bit more.
 
 So here are things I like github:
 
 - Code is presented first.
 - Documentation is easy to write and very nice to **read**.
-- Non technical people can make edits and propose pull requests all from the 
+- Non technical people can make edits and propose pull requests all from the
   web.
 - It's a bit more social (e.g; you have mentions).
 - Web hooks and many things embracing them.
@@ -36,7 +37,7 @@ The things I like about launchpad:
 
 - Direct link between the source and ubuntu.
 - A very nice bug tracking system.
-- Given we work with Ubuntu, a very big existing database. Every other team 
+- Given we work with Ubuntu, a very big existing database. Every other team
   working on Ubuntu uses launchpad already.
 - Very product oriented.
 - A nice language translation system.
@@ -45,11 +46,11 @@ Most of the things a like about one are probably things that I don't like or
 are missing in the other.
 
 # snappy
-Given we work on `lp:snappy` most of the time now, I want to have a look at the 
+Given we work on `lp:snappy` most of the time now, I want to have a look at the
 _would be_ workflow when on launchad and on github.
 
 # The launchpad workflow
-First of all, if the codebase were moved to launchpad's git support we'd be 
+First of all, if the codebase were moved to launchpad's git support we'd be
 missing proper support to query merge proposal status and linking bug reports
 to commits.
 
@@ -63,9 +64,9 @@ The flow with git would be as follows:
 6. Create merge proposal.
 7. Manually merge.
 8. Manually invoke test run.
-9. `git push git+ssh://USER@git.launchpad.net/snappy` 
+9. `git push git+ssh://USER@git.launchpad.net/snappy`
 
-It is an improvement over bzr (especially since branches are colocated and go 
+It is an improvement over bzr (especially since branches are colocated and go
 likes that), but we miss:
 
 - unit test runs.
@@ -85,7 +86,7 @@ This is what would happen:
 1. `cd $GOPATH/src/launchpad.net/snappy`.
 2. `git branch -c <feature>`
 3. edit/create/fix
-4. `git commit -s -m '...'`, if the issue is part of the 
+4. `git commit -s -m '...'`, if the issue is part of the
    comment it gets linked through github.
 5. git push git@github.com:<snappy-org>/snappy.git
 6. Create pull request.
@@ -96,9 +97,9 @@ This is what would happen:
     3. Runs sanity checks (go vet, lint, ...)
     4. Push the unit test coverage to corevalls.io
     5. Build deb.
-8. Reviewer uses the data updated in real time aside from his human provided 
-   factor to determine if the PR should be merged. This data includes, travis 
-   passing unit tests and it's coverage increase or decrease among others with 
+8. Reviewer uses the data updated in real time aside from his human provided
+   factor to determine if the PR should be merged. This data includes, travis
+   passing unit tests and it's coverage increase or decrease among others with
    nice badges.
 9. Click on Merge PR.
 10. The master branch has it's status/sanity presented with badges as well.
@@ -116,5 +117,5 @@ are absolute to make `go get` straightforward (even if we don't take too many
 other advantages for it) for which one solution I've been wanting to give a try
 is http://getgb.io.
 
-In some sense I sometimes get the feeling that github is like vim and launchpad 
+In some sense I sometimes get the feeling that github is like vim and launchpad
 is like emacs, and I am a vim person.
