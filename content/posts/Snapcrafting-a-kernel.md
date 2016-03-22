@@ -61,7 +61,7 @@ Since the kernel is the main project and to iterate quickly it makes sense
 to clone it and start snapcrafting from there, so let's clone
 
 ```shell
-git clone --depth 1 https://github.ubuntu.com/96boards/linux
+git clone --depth 1 https://github.com/96boards/linux
 ```
 
 Depending on when you do this, you might need to also cherry pick
