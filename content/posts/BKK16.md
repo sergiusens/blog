@@ -1,8 +1,8 @@
 ---
 Categories: [ubuntu]
 Description: ""
-Keywords: [ubucon]
-Tags: [conference]
+Keywords: [linaro connect]
+Tags: [conference, snappy]
 date: 2016-03-21T17:31:57-03:00
 title: Linaro Connect BKK16
 ---
