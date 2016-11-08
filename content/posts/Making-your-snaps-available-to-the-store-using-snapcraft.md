@@ -7,19 +7,18 @@ date: 2016-11-04T13:58:35+02:00
 title: Making your snaps available to the store using snapcraft
 ---
 
-Now that Ubuntu Core has been officially released, it might be a good
-time to get your snaps into the Store for the enjoyment of all the new
-users in the system.
+Now that [Ubuntu Core] has been [officially released], it might be a good
+time to get your snaps into the Store.
 
 # Delivery and Store Concepts
 So let's start with a refresher on what we have available on the Store
-side to manage the availability of your snaps.
+side to manage your snaps.
 
 Every time you push a snap to the store, the store will assign it
 a revision, this revision is unique in the store for this particular
 snap.
 
-However to be able to push for a snap for the first time, the **name**
+However to be able to push a snap for the first time, the **name**
 needs to be registered which is pretty easy to do given the name is
 not already taken.
 
@@ -38,33 +37,35 @@ things to take into account.
 
 The first thing to take into account is that at the beginning of the
 snapping process you will likely get started with a non confined snap
-as this is where the bulk of the work is to work on this new paradigm.
-With that in mind, your project gets started with a `confinement` of
+as this is where the bulk of the work needs to happen to adapt to
+this new paradigm.
+With that in mind, your project gets started with a `confinement` set to
 `devmode`. This makes it possible to get going on the early phases
-of development with a sharing experience with others, once everything
-is fully supported with the security model snaps work in this
+of development and still get your snap into the store. Once everything
+is fully supported with the security model snaps work in, this
 `confinement` entry can be switched to `strict`. Given the `confinement`
 level of `devmode` this snap is only releasable on the `edge` and `beta`
-channels.
+channels which hints your users on how much risk they are taking by
+going there.
 
 So let's say you are good to go on the confinement side and you start
 a CI/CD process against `edge` but you also want to make sure in some
 cases that early releases of a new iteration against master never make
 it to `stable` or `candidate` and for this we have a `grade` entry. If
 the `grade` of the snap is set to `devel` the store will never allow you
-to releasing to the most stable channels (`stable` and `candidate`) will
+to release to the most stable channels (`stable` and `candidate`).
 not be possible.
 
 Somewhere along the way we might want to release a revision into beta
 which some users are more likely want to track on their side (which
 given good release management process should be to some level more
-usable than a random daily build). When the stage in the process is over
-and want people to keep getting updates we can choose to `close` the
+usable than a random daily build). When that stage in the process is over
+but want people to keep getting updates we can choose to `close` the
 `beta` channel as we only plan to release to `candidate` and `stable`
 from a certain point in time, by closing this `beta` channel we will
 make that channel track the following open channel in the stability
-list, be it first `candidate` and if that is also closed, it would be
-`stable`.
+list, in this case it is `candidate`, if `candidate` is tracking
+`stable` whatever is in `stable` is what we will get.
 
 # Enter Snapcraft
 So given all these concepts how do we get going with `snapcraft`, first of
@@ -72,7 +73,7 @@ all we need to `login`:
 
     $ snapcraft login
     Enter your Ubuntu One SSO credentials.
-    Email: sergio.schvezov@canonical.com
+    Email: sxxxxx.sxxxxxx@canonical.com
     Password: **************
     Second-factor auth: 123456
 
@@ -140,8 +141,8 @@ go ahead and release this to `stable`:
 
     The 'stable' channel is now open.
 
-In this last channel map view for the architecture we are working with
-we can see that `edge` is going to be stuck on revision 1, and that
+In this last channel map view for the architecture we are working with,
+we can see that `edge` is going to be stuck on revision 10, and that
 `beta` and `candidate` will be following `stable` which is on revision 10.
 For some reason we decide that we will focus on stability and make our
 CI/CD push to `beta` instead. This means that our `edge` channel will
@@ -192,3 +193,6 @@ We can also get the full history:
 # Closing remarks
 I hope this gives an overview of the things you can do with the store
 and more people start taking advantage of it!
+
+[Ubuntu Core]: https://www.ubuntu.com/core
+[officially released]: https://insights.ubuntu.com/2016/11/03/ubuntu-core-16-delivers-foundation-for-secure-iot/
