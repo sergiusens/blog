@@ -11,15 +11,15 @@ These are my notes about UbuconLA, a bit of social activities and thoughts on th
 
 # Arriving
 
-I left late on thursday for a planned night arrival into Lima, Leo was going to be arriving around 2 hours earlier then me flying in from Costa Rica.
+I left late on thursday for a planned night arrival into Lima, Leo was going to be arriving around 2 hours earlier than me flying in from Costa Rica.
 
 Once the plane I was on coming from Cordoba, Argentina landed into Lima I got onto an ad-hoc telegram group we had created and mentioned that I had landed and discovered Leo was still trying to Uber out of there. I eventually cleared customs, pretty quickly given the estimate Jose had given me, and we Ubered together to meetup with Jose and Nathan.
 
-After a couple of beers we headed to the hotel, where Leo and I checked in, only to discover that the travel agent had not made my reservation and given the hectic times during the time of this booking I had not to followed up to verify the booking had been made. Luckily there was still accomodation available, so I handed my credit card over with the hopes of having the agency take care of it the next day. It was getting pretty late and time for sleep was getting slimmer.
+After a couple of beers we headed to the hotel, where Leo and I checked in, only to discover that the travel agent had not made my reservation and given the hectic times when I made this booking I had not followed up to verify the booking had been made. Luckily there was still accomodation available, so I handed my credit card over with the hopes of having the agency take care of it the next day. It was getting pretty late and time for sleep was getting slimmer.
 
 # Day 1
 
-The event took place at the University of Lima, I had been there before two years prior, and the setup was pretty similar as that previous time I was there. After clearing through the univerity's security checkpoint we were in. I was queued to speak after the opening speach that Jose was to provide.
+The event took place at the University of Lima, I had been there before two years prior, and the setup was pretty similar as that previous time I was there. After clearing through the University's security checkpoint we were in. I was queued to speak after the opening speech that Jose was to provide.
 
 ## Reaching your users
 
@@ -32,7 +32,7 @@ Here is the recording
 
 ## No need to be a developer to contribute
 
-Nathan spoke about contributing without being a developer and his story on how he got involved in the world of Ubuntu and how he evolved out of it into upstream projects. How to do proper hand overs and how transitioning responsibilities avoid burn outs.
+Nathan spoke about contributing without being a developer and his story on how he got involved in the world of Ubuntu and how he evolved out of it into upstream projects. How to do proper hand overs and how transitioning responsibilities avoids burn outs.
 
 Tangential to this talk, Nathan and I spent a lot of time discussing snaps, how they fit the enterprise, and some use cases for it where he works.
 
@@ -83,6 +83,8 @@ There's a plethora of software installed here and the day before we discussed ma
 We had a bit of an interval during the evening where Leo asked a couple of folks who did the snapcraft workshop the day before if they wanted to continue and explore some more, so that is exactly what they did in an ad-hoc gathering on the floor.
 
 <img src="/img/DSC_0975.JPG" class="img-responsive center-block" />
+
+On the side, Nathan started adding snap support into puppet, he had a prototype working by the end of it. He might be following up on the snapcraft forums once he has something presentable.
 
 # Closing thoughts
 
