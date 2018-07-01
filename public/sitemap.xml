@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://blog.sergiusens.org/posts/ubuconla-2017-summit-summary/</loc>
+    <lastmod>2017-08-23T13:29:02-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/posts/making-your-snaps-available-to-the-store-using-snapcraft/</loc>
+    <lastmod>2016-11-04T13:58:35+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/posts/the-snapcraft-parts-ecosystem/</loc>
+    <lastmod>2016-06-27T12:57:07-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/posts/snapcrafting-a-kernel/</loc>
+    <lastmod>2016-03-21T21:06:57-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/posts/bkk16/</loc>
+    <lastmod>2016-03-21T17:31:57-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/posts/ubucon-and-scale-2016-trip-report/</loc>
+    <lastmod>2016-02-12T16:31:57-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/posts/ubuconla-2015-summary/</loc>
+    <lastmod>2015-08-16T13:29:02-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/posts/recovering-ubuntu-core/</loc>
+    <lastmod>2015-08-01T19:36:12-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/posts/grub-and-snappy-updates/</loc>
+    <lastmod>2015-07-05T11:41:56-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/posts/the-github-or-launchpad-dilemma/</loc>
+    <lastmod>2015-06-25T01:27:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/posts/snappy_rolling_back_on_kernel_panic/</loc>
+    <lastmod>2015-05-08T12:31:49-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/posts/updates-in-snappy-and-ubunu-device-flash/</loc>
+    <lastmod>2015-04-20T16:29:39-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/posts/preliminary-support-for-dtb-override-from-oem-snaps/</loc>
+    <lastmod>2015-01-30T11:25:45-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/posts/snappy-things/</loc>
+    <lastmod>2015-01-20T12:07:57-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/posts/ubuntu-core/</loc>
+    <lastmod>2014-12-10T18:15:38+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/posts/travis-and-ruby-gems-setup-on-ubuntu/</loc>
+    <lastmod>2014-11-27T00:06:12-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/</loc>
+    <lastmod>2017-08-23T13:29:02-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/tags/conference/</loc>
+    <lastmod>2017-08-23T13:29:02-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/posts/</loc>
+    <lastmod>2017-08-23T13:29:02-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/tags/snapcraft/</loc>
+    <lastmod>2017-08-23T13:29:02-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/tags/snappy/</loc>
+    <lastmod>2017-08-23T13:29:02-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/tags/summit/</loc>
+    <lastmod>2016-02-12T16:31:57-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/tags/</loc>
+    <lastmod>2017-08-23T13:29:02-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.sergiusens.org/categories/ubuntu/</loc>
+    <lastmod>2017-08-23T13:29:02-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

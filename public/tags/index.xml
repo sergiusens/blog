@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on </title>
+    <link>http://blog.sergiusens.org/tags/</link>
+    <description>Recent content in Tags on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Aug 2017 13:29:02 -0300</lastBuildDate>
+    
+	<atom:link href="http://blog.sergiusens.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Conference</title>
+      <link>http://blog.sergiusens.org/tags/conference/</link>
+      <pubDate>Wed, 23 Aug 2017 13:29:02 -0300</pubDate>
+      
+      <guid>http://blog.sergiusens.org/tags/conference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Snapcraft</title>
+      <link>http://blog.sergiusens.org/tags/snapcraft/</link>
+      <pubDate>Wed, 23 Aug 2017 13:29:02 -0300</pubDate>
+      
+      <guid>http://blog.sergiusens.org/tags/snapcraft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Snappy</title>
+      <link>http://blog.sergiusens.org/tags/snappy/</link>
+      <pubDate>Wed, 23 Aug 2017 13:29:02 -0300</pubDate>
+      
+      <guid>http://blog.sergiusens.org/tags/snappy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Summit</title>
+      <link>http://blog.sergiusens.org/tags/summit/</link>
+      <pubDate>Fri, 12 Feb 2016 16:31:57 -0300</pubDate>
+      
+      <guid>http://blog.sergiusens.org/tags/summit/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
