@@ -6,12 +6,5 @@ install:
   - sudo snap install hugo
 
 script:
-  - /snap/bin/hugo
-  - cd public
-  - cd public && touch .nojekyll
-  - cd public && git init
-  - cd public && git add .
-  - cd public && git -c user.name='travis' -c user.email='travis' commit -m "Deploy for $TRAVIS_COMMIT"
-  # Make sure to make the output quiet, or else the API token will leak!
-  # This works because the API key can replace your password.
-  - cd public && git push --set-upstream --force --quiet https://sergiusens:$GITHUB_API_KEY@github.com/sergiusens/sergiusens.github.com.git master &2>/dev/null
+  - /snap/bin/hugo --destination site_deploy
+  - ./deploy site_deploy
