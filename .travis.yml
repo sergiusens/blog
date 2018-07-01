@@ -14,4 +14,4 @@ script:
   - git push --force https://
   # Make sure to make the output quiet, or else the API token will leak!
   # This works because the API key can replace your password.
-  - git push -f -q https://sergiusens:$GITHUB_API_KEY@github.com/sergiusens/sergiusens.github.com.git master &2>/dev/null
+  - git push --set-upstream --force --quiet https://sergiusens:$GITHUB_API_KEY@github.com/sergiusens/sergiusens.github.com.git master &2>/dev/null
