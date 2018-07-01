@@ -6,7 +6,7 @@ install:
   - sudo snap install hugo
 
 script:
-  - hugo
+  - /snap/bin/hugo
 
 after_success: |
   if [ -n "$GITHUB_API_KEY" ]; then
