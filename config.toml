@@ -1,0 +1,31 @@
+baseurl = "http://blog.sergiusens.org/"
+languageCode = "en-us"
+DisqusShortname = "sergiusens"
+paginate = 6
+canonifyurls = true
+theme = "casper-two"
+
+[permalinks]
+  post = "/posts/:slug/"
+
+[params]
+  title = "I me mine"
+  subtitle = "A placeholder to write things down"
+  copyright = "All rights reserved - 2018"
+  description = "Just my thoughts"
+
+  cover = "img/banner.jpg" 
+
+  author = "Sergio Schvezov"
+  authorAvatar = "img/banner.jpg"
+  authorLocation = "Cordoba, Argentina"
+  authorBio = "Software developer, currently the tech lead for the snapcraft tool"
+
+  googleAnalyticsUserID = "UA-37640305-1"
+
+  githubName = "sergiusens"
+  twitterName = "sergiusens"
+  linkedinName = "SergioSchvezov"
+  instagramName = "sergiusens"
+
+  singleViewStyle = "caspertwo"
