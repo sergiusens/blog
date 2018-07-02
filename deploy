@@ -19,8 +19,9 @@ else
     )
 fi
 
-/snap/bin/hugo
+/snap/bin/hugo -d "$SITE"
 
+cd "$SITE" || exit
 git add .
 if [ -n "$TRAVIS_COMMIT" ]; then
     message="Deploy for $TRAVIS_COMMIT on $(date)"
@@ -30,9 +31,9 @@ fi
 
 git -c user.name='travis' -c user.email='travis' commit -m "$message"
 if [ -n "$GITHUB_API_KEY" ]; then
-    git push --set-upstream --force --quiet https://sergiusens:"$GITHUB_API_KEY"@github.com/sergiusens/sergiusens.github.com.git master 2>/dev/null
+    git push --set-upstream --quiet https://sergiusens:"$GITHUB_API_KEY"@github.com/sergiusens/sergiusens.github.com.git master 2>/dev/null
 else
     # Make sure to make the output quiet, or else the API token will leak!
     # This works because the API key can replace your password.
-    git push --set-upstream --force https://github.com/sergiusens/sergiusens.github.com.git master
+    git push --set-upstream https://github.com/sergiusens/sergiusens.github.com.git master
 fi
