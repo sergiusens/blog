@@ -15,7 +15,7 @@ theme = "casper-two"
   cover = "img/banner.jpg" 
 
   author = "Sergio Schvezov"
-  authorAvatar = "img/banner.jpg"
+  authorAvatar = "img/avatar.png"
   authorLocation = "Cordoba, Argentina"
   authorBio = "Software developer, currently the tech lead for the snapcraft tool"
 
