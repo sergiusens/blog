@@ -22,6 +22,12 @@ fi
 /snap/bin/hugo -d "$SITE"
 
 cd "$SITE" || exit
+
+if [ -z "$(git status -s)" ]; then
+    echo "Nothing new to deploy... exit"
+    exit 0
+fi
+
 git add .
 if [ -n "$TRAVIS_COMMIT" ]; then
     message="Deploy for $TRAVIS_COMMIT on $(date)"
