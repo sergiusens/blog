@@ -1,4 +1,4 @@
-baseurl = "http://blog.sergiusens.org"
+baseurl = "http://blog.sergiusens.org/"
 languageCode = "en-us"
 DisqusShortname = "sergiusens"
 paginate = 6
