@@ -1,12 +1,10 @@
-baseurl = "http://blog.sergiusens.org/"
+baseurl = "http://blog.sergiusens.org"
 languageCode = "en-us"
 DisqusShortname = "sergiusens"
 paginate = 6
-canonifyurls = true
-theme = "ananke"
-
-[permalinks]
-  post = "/posts/:slug/"
+relativeURLs = true
+canonifyURLs = false
+theme = "casper-two"
 
 [params]
   title = "I me mine"
