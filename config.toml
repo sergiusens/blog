@@ -19,7 +19,7 @@ theme = "casper-two"
   authorLocation = "Cordoba, Argentina"
   authorBio = "Software developer, currently the tech lead for the snapcraft tool"
 
-  googleAnalyticsUserID = "UA-37640305-1"
+  googleAnalytics = "UA-37640305-1"
 
   githubName = "sergiusens"
   twitterName = "sergiusens"
