@@ -4,7 +4,7 @@ Description: ""
 Keywords: [code]
 Tags: [snappy, snapcraft, development]
 date: 2017-08-23T13:29:02-03:00
-title: snapcraft development with LXD in bewteen
+title: snapcraft development with LXD in between
 draft: true
 ---
 
