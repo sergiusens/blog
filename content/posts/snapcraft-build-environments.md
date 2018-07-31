@@ -84,7 +84,7 @@ The shell prompt (`PS1`) is descriptive to the project with regards to its locat
 
 ## Cleanup
 
-Cleaning up is rather easy, just run `snapcraft clean`. This is just wipes the qcow2 images and related keys.
+Cleaning up is rather easy, just run `snapcraft clean`. This simply wipes the qcow2 images and related keys.
 
 # Experimentation
 
