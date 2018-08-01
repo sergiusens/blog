@@ -3,15 +3,15 @@ title: "Snapcraft Build Environments"
 date: 2018-07-30T17:47:42-03:00
 categories: [ubuntu]
 tags: [snappy, snapcraft, development]
-draft: true
+draft: false
 ---
 
 # Prologue
-After a week away from my computer I want to organize my thoughts on the progress made towards [build VMs](https://forum.snapcraft.io/t/status-tracking-for-build-vm/5505) by providing this write up. That forum post can be a bit hard to follow if you are casually wanting to keep up to date.
+After a week away from my computer I want to organize my thoughts on the progress made towards [build VMs](https://forum.snapcraft.io/t/status-tracking-for-build-vm/5505) by providing this write up since that forum post can be a bit overwhelming if you are casually wanting to keep up to date.
 
-The reasons for going down this path, for those not up to speed, is that we want to have a very consistent build environment, for which anyone building a project can have an expectable outcome of a working snap (or non working one if it really doesn't). Case in point, we want to avoid the _works for me_ situation as much as possible.
+The reasons for this feature work to exist, for those not up to speed, is that we want to have a very consistent build environment for which anyone building a project can have an expectable outcome of a working snap (or non working one if it really doesn't). Case in point, we want to avoid the _works for me_ situation as much as possible.
 
-The reasons to chose virtualization over containers are that we even want to isolate ourselves from the kernel running on the system, providing a consistent experience for things like the ability to use `build-snaps`.
+One of the reasons to choose virtualization over containers is that we even want to isolate ourselves from the kernel running on the system, providing a consistent experience for things like the ability to use `build-snaps`.
 
 This is an overview of the current state of the development of this functionality.
 
@@ -82,4 +82,4 @@ In that video, you can observe that after fixing the issue we just ran snapcraft
 Cleaning up is rather easy, just run `snapcraft clean`. This simply wipes the data directories reserved for the snapcraft project.
 
 # Looking further
-So far I have targets for `core18` and a fictitious `core16` base. To validate the entire process though, I did also play with creating a Fedora based disk to run through that same make project by hacking up a quick DNF repo handler inside snapcraft, this of course was uninstallable as there is no fedora base (yet at least).
+So far I have targets for `core18` and a fictitious `core16` base. To validate the entire process though, I did also play with creating a Fedora based disk to run through that same make project by hacking up a quick DNF repo handler inside snapcraft, the resulting snap that came out of exercising this process was uninstallable as expected as there is no fedora base (yet at least).
