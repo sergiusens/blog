@@ -13,6 +13,8 @@ The reasons for going down this path, for those not up to speed, is that we want
 
 The reasons to chose virtualization over containers are that we even want to isolate ourselves from the kernel running on the system, providing a consistent experience for things like the ability to use `build-snaps`.
 
+This is an overview of the current state of the development of this functionality.
+
 # Working on a project
 
 ## Creation
@@ -77,9 +79,7 @@ Debugging should be a similar experience, let's pick up from where we left off a
 In that video, you can observe that after fixing the issue we just ran snapcraft through its entire lifecycle to get the snap created.
 
 ## Cleanup
-
 Cleaning up is rather easy, just run `snapcraft clean`. This simply wipes the data directories reserved for the snapcraft project.
 
-# Experimentation
-
+# Looking further
 So far I have targets for `core18` and a fictitious `core16` base. To validate the entire process though, I did also play with creating a Fedora based disk to run through that same make project by hacking up a quick DNF repo handler inside snapcraft, this of course was uninstallable as there is no fedora base (yet at least).
