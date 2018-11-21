@@ -1,9 +1,8 @@
-sudo: required
-dist: trusty
+dist: xenial
 
-install:
-  - sudo apt-get --yes install snapd
-  - sudo snap install hugo
+addons:
+  snaps:
+    - hugo
 
 script:
   - ./deploy site_deploy
