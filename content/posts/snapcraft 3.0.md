@@ -22,7 +22,7 @@ environments. These are configurations created for every snapcraft project you
 work on, tuned for the desired targets, ensuring API and ABI compatibility are
 in place for every binary through these build environments.
 
-The way build environments  work is by leveraging a feature of the _snappy_ architecture
+The way build environments  work is by leveraging a feature of the _snap_ architecture
 alled **bases**.
 A base is the building block that applications can rely on as a stable run time. At build time,
 the snapcraft tool ensures you are creating your applications inside an 
@@ -86,7 +86,7 @@ with the use of the `base` keyword.
 ### `license`
 The license applicable to a snap is defined under the SPDX 2.0 format.
 Validity of the license syntax is done using `snap pack` schema validation
-to ensure consistency across this _snappy_ ecosystem.
+to ensure consistency across this _snap_ ecosystem.
 
 ### Wrapperless snaps
 If you were part of the history of snaps since its conception, the idea of these wrappers
@@ -149,7 +149,7 @@ The majority of non deprecated or removed plugins have been reworked to be `base
 Since the declaration of the `base` keyword is done manually by the user, some plugins
 have introduced semantic changes into how they operate as well.
 
-Below is the set of plugins whith interesting changes and new properties
+Below is the set of plugins with interesting changes and new properties
 available to the user.
 
 ### ant
