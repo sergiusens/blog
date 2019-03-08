@@ -31,8 +31,6 @@ To solve the above, we are also introducing a new keyword, `build-base`. This ta
 
 With the release of Snapcraft 3.0, all new features are now tied to the use of the `base` keyword. If *base* isn't specified, your snap will build just as it used to, only without the new features. This way, we don't force anyone to use or migrate to our new features and can maintain a only single version of snapcraft, regardless of whether you're using bases or do not.
 
-## core16 base status 
-
 We originally planned to have a `core16` base snap to support a 16.04 base with the release of Snapcraft 3.0. However, the release of *core16* is currently behind schedule. 
 
 To help mitigate the effects of this delay, we're going to activate a slight trick in snapcraft. The trick is that snapcraft will soon allow specifying `core` as a base but it will write out a `snap.yaml` with no base. This means that `core` essentially **is** a base internally - it's just treated differently because it's coupled with snapd (which, with the `core16` work, has also been stripped out into its own snap).
