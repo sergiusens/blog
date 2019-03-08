@@ -16,6 +16,7 @@ So far, the only place developers have been using bases is when they declare `ty
 But from snapcraft's point of view, the `base` keyword can also be used with snap types of `gadget` and `kernel`, and these would then work internally inside snapd. 
 
 Discussions at the sprint the following initial questions about using *base* with gadget and kernel snaps:
+
 - Is it useful?
 - How would everything connect, internally, inside snapd.
 - How would it affect the runtime? (as a kernel or gadget snap could be _userspace_ independent, if all the potential hooks they used were architecture independent and would require a base for the cases, it would be relevant. 
@@ -39,6 +40,7 @@ To help mitigate the effects of this delay, we're going to activate a slight tri
 ## Summary
 
 Here's what you'll be able to do with the upcoming releases of snapcraft:
+
 - Use `none` as a base (requires work in snapd as well).
 - Specify a `build-base` when using `base: none`.
 - Use `core` as a base in `snapcraft.yaml`.
