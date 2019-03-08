@@ -1,7 +1,8 @@
 ---
 title: "Broader use of bases for snaps"
 date: 2019-03-08T12:18:53-03:00
-draft: true
+tags: [snappy, snapcraft, development]
+draft: false
 ---
 
 We have regular *Engineering Sprints* at Canonical. These are a great opportunity for engineering teams to come together and discuss progress and roadmaps, as well as code and work together. Many of us have just returned from one such event in _Malta_, getting home just before the widely report storm hit the island (see [Destruction across Malta as gale-force winds batter islands](https://www.timesofmalta.com/articles/view/20190224/local/gale-force-winds-cause-substantial-damage-but-no-injuries-reported.702795)).:w
