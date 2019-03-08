@@ -5,7 +5,7 @@ tags: [snappy, snapcraft, development]
 draft: false
 ---
 
-We have regular *Engineering Sprints* at Canonical. These are a great opportunity for engineering teams to come together and discuss progress and roadmaps, as well as code and work together. Many of us have just returned from one such event in _Malta_, getting home just before the widely report storm hit the island (see [Destruction across Malta as gale-force winds batter islands](https://www.timesofmalta.com/articles/view/20190224/local/gale-force-winds-cause-substantial-damage-but-no-injuries-reported.702795)).:w
+We have regular *Engineering Sprints* at Canonical. These are a great opportunity for engineering teams to come together and discuss progress and roadmaps, as well as code and work together. Many of us have just returned from one such event in _Malta_, getting home just before the widely report storm hit the island (see [Destruction across Malta as gale-force winds batter islands](https://www.timesofmalta.com/articles/view/20190224/local/gale-force-winds-cause-substantial-damage-but-no-injuries-reported.702795)).
 
 And one of the things we discussed over the course of that week was the implications of using *bases* when snaps use `type` other than `app` (a base is a special kind of snap that provides a minimal set of libraries common to most applications).
 
