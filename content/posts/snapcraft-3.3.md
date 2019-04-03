@@ -3,7 +3,7 @@ title: "Snapcraft 3.3"
 date: 2019-04-03T14:05:04-03:00
 categories: [ubuntu]
 tags: [snappy, snapcraft, development]
-draft: true
+draft: false
 ---
 
 snapcraft 3.1 is now available on the stable channel of the Snap Store. This is a new minor release building on top of the foundations laid out from the [snapcraft 3.3 release](https://github.com/snapcore/snapcraft/releases/tag/3.3).
