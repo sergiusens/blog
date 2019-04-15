@@ -6,7 +6,7 @@ tags: [snappy, snapcraft, development]
 draft: false
 ---
 
-snapcraft 3.1 is now available on the stable channel of the Snap Store. This is a new minor release building on top of the foundations laid out from the [snapcraft 3.3 release](https://github.com/snapcore/snapcraft/releases/tag/3.3).
+snapcraft 3.3 is now available on the stable channel of the Snap Store. This is a new minor release building on top of the foundations laid out from the [snapcraft 3.0 release](https://github.com/snapcore/snapcraft/releases/tag/3.0).
 
 If you are already on the `stable` channel for snapcraft then all you need to do is wait for the snap to be refreshed.
 
