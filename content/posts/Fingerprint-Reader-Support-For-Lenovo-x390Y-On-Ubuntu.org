@@ -1,0 +1,27 @@
+#+title: Fingerprint Reader Support for Lenovo x390Y on Ubuntu
+#+date: 2020-03-28T19:38:02-03:00
+#+categories[]: ubuntu
+#+keywords[]: focal,fossa,20.04,snaps,fingerprint,fwupdmgr,lenovo,synaptics
+#+draft: false
+
+This is experimental, but I went ahead and ran the following after reading about it on [[https://www.reddit.com/r/LinuxOnThinkpad/comments/f9hdys/x1y4f31_just_got_the_fingerprint_sensor_to_work/][reddit]].
+
+#+BEGIN_SRC sh
+snap install fwupdmgr
+/snap/bin/fwupdmgr install https://fwupd.org/downloads/cbe7b45a2591e9d149e00cd4bbf0ccbe5bb95da7-Synaptics-Prometheus_Config-0021.cab
+/snap/bin/fwupdmgr install https://fwupd.org/downloads/3b5102b3430329a10a3636b4a594fc3dd2bfdc09-Synaptics-Prometheus-10.02.3110269.cab
+#+END_SRC
+
+These two =cab= files are referenced from:
+
+- https://fwupd.org/lvfs/devices/com.synaptics.prometheus.config
+- https://fwupd.org/lvfs/devices/com.synaptics.prometheus.firmware
+
+Rebooted and then went ahead with the actual fingerprint setup:
+
+#+html: <p><img src="/img/fingerprint-1.png"</img></p>
+#+html: <p><img src="/img/fingerprint-2.png"</img></p>
+#+html: <p><img src="/img/fingerprint-3.png"</img></p>
+
+After this was all done, login with fingerprints just worked. The only downside is
+that you need to press a key first to bring up the unlock logic.
