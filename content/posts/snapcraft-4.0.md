@@ -250,3 +250,21 @@ supports the same build roots as build.snapcraft.io (or Launchpad),
 bringing the two environments closer together. With these new images,
 there is now support for all the snap enabled architectures too.
 
+# Progressive Releases
+
+Initial *experimental* support for progressive releases has landed in
+Snapcraft. To view any existing progressive release use the `status`
+command, as an example:
+
+    $ snapcraft status candycane
+    Track     Arch    Channel    Version    Revision    Progress
+    latest    all     stable     -          -           -
+    		  candidate  -          -           -
+    		  beta       0.6        8           → 20%
+    			     10         13          → 80%
+    		  edge       ↑          ↑         -
+
+To perform a progressive release, use the `release` command with the
+with the `--progressive` option. After releasing, the status of the
+release will be shown.
+
