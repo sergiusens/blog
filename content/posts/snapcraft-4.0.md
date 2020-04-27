@@ -257,12 +257,12 @@ Snapcraft. To view any existing progressive release use the `status`
 command, as an example:
 
     $ snapcraft status candycane
-    Track     Arch    Channel    Version    Revision    Progress
-    latest    all     stable     -          -           -
-    		  candidate  -          -           -
-    		  beta       0.6        8           → 20%
-    			     10         13          → 80%
-    		  edge       ↑          ↑         -
+    Track     Arch      Channel    Version    Revision    Progress
+    latest    all       stable     -          -           -
+    		            candidate  -          -           -
+    		            beta       0.6        8           → 20%
+    			                   10         13          → 80%
+    		            edge       ↑          ↑         -
 
 To perform a progressive release, use the `release` command with the
 with the `--progressive` option. After releasing, the status of the
