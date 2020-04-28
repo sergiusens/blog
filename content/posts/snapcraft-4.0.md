@@ -163,7 +163,7 @@ virtual environment, preferring the python interpreter shipped in
 the `core20` base.
 
 By behaving this way, the plugin operates more like how a Python
-developer would expect, allowing for easier *snap*customization
+developer would expect, allowing for easier *snap* customization
 whilst still using the plugin.
 
 The plugin can use an interpreter if it is added through a
